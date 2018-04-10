@@ -3,3 +3,4 @@ output-virtualbox-iso
 .vagrant/
 Vagrantfile
 output-*
+.*.sw*

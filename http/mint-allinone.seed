@@ -9,40 +9,44 @@ tasksel tasksel/first multiselect
 
 #Step 2
 d-i pkgsel/language-pack-patterns   string
-d-i debian-installer/locale string en_GB
-d-i time/zone string Europe/London
+d-i debian-installer/locale string en_US
+d-i time/zone string US/Eastern
 d-i console-setup/layoutcode string gb
 
 #Step 3
-d-i partman-auto/disk string /dev/sda
-d-i partman-auto/choose_recipe select atomic
 d-i partman-auto/method string lvm
-d-i partman-auto-lvm/guided_size string max
+d-i partman-lvm/device_remove_lvm boolean true
+d-i partman-md/device_remove_md boolean true
 d-i partman-lvm/confirm boolean true
 d-i partman-lvm/confirm_nooverwrite boolean true
-d-i partman-lvm/device_remove_lvm boolean true
+d-i partman-auto/choose_recipe select atomic
+d-i partman-partitioning/confirm_write_new_label boolean true
 d-i partman/choose_partition select finish
 d-i partman/confirm boolean true
 d-i partman/confirm_nooverwrite boolean true
-d-i partman/confirm_write_new_label boolean true
+d-i partman-md/confirm boolean true
+d-i partman-partitioning/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
 
-d-i grub-installer/only_debian boolean true
-d-i grub-installer/with_other_os boolean true
+
 
 d-i console-setup/ask_detect boolean false
 d-i keyboard-configuration/layoutcode string gb
 
 #Step 4
 d-i passwd/user-fullname string vagrant
-d-i passwd/username string vagrant
-d-i passwd/user-password password vagrant
-d-i passwd/user-password-again password vagrant
+d-i passwd/username string jonco
+d-i passwd/user-password password J3kabs
+d-i passwd/user-password-again password J3kabs
 d-i user-setup/allow-password-weak boolean true
-d-i netcfg/get_hostname string vagrant
+d-i netcfg/get_hostname string jc-vm-mint
 d-i passwd/auto-login boolean true
 
 d-i apt-setup/extras boolean true
 d-i pkgsel/include string openssh-server
+d-i pkgsel/include string vim-gtk-py2
 d-i finish-install/reboot_in_progress note
 
 #

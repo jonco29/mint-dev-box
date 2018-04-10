@@ -5,12 +5,12 @@
   "desktop": "true",
   "developer": "dev",
   "cpus": "2",
-  "disk_size": "186281",
-  "iso_checksum": "e71a2aad8b58605e906dbea444dc4983",
-  "iso_checksum_type": "md5",
-  "iso_url": "http://mirror.bytemark.co.uk/linuxmint/stable/17.3/linuxmint-17.3-cinnamon-64bit.iso",
-  "memory": "6144",
+  "iso_checksum": "6311d58ffbc7ff4457fe54b9cc0996b14587f775",
+  "iso_checksum_type": "sha1",
+  "iso_url": "http://127.0.0.1:8000/linuxmint-18.3-cinnamon-64bit.iso",
+  "memory": "2048",
   "preseed": "mint-allinone.seed",
+  "preseed2": "example.seed",
   "vagrantfile_template": "tpl/vagrantfile-mint-cinnamon-17.3.tpl",
-  "boot_command_prefix": "<esc><wait><esc><wait>"
+  "boot_command_prefix": "<esc><wait><tab><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>"
 }
